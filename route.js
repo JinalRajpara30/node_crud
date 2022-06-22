@@ -1,6 +1,6 @@
 var express = require('express')
 var router = express.Router();
-var Movie = require('./Model/movie')
+var Movie = require('./Model/Movie')
 
 router.get("/movies",async(req,res)=>{
     const iMovie = await
@@ -8,4 +8,4 @@ router.get("/movies",async(req,res)=>{
     res.send(iMovie);
 });
 
-module.exports = router
+module.exports = router;
